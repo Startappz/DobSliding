@@ -71,11 +71,11 @@ MainActivity.java
         super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		// We must enable home button
-		getActionBar().setHomeButtonEnabled(true);
-
-		// For ActionBarSherlock and CompactActionBar
-		// getSupportActionBar().setHomeButtonEnabled(true);
+		// For GingerBreed and less, we must enable home button,
+		// else, it is up to you
+		if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.GINGERBREAD_MR1) {
+			getSupportActionBar().setHomeButtonEnabled(true);
+		}
 
 		// Initialization
 		try {
@@ -136,13 +136,10 @@ MainActivity.java
 For ActionBarSherlock and CompactActionBar
 ------------------------------------------
 
-Write
+DobSliding works perfectly in both ActionBarSherlock and CompactActionBar, for Android GingerBreed and less, don't forget to write
+
 ```java
 getSupportActionBar().setHomeButtonEnabled(true);
-```
-Instead of
-```java
-getActionBar().setHomeButtonEnabled(true);
 ```
 
 
@@ -196,3 +193,10 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+
+Note
+----
+
+I developed DobSliding while I am working in Startappz company, so you can find the library in
+[https://github.com/Startappz/DobSliding](https://github.com/Startappz/DobSliding)
