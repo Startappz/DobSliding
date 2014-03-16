@@ -1,6 +1,7 @@
 package com.dobmob.dobslidingdemo;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -13,7 +14,6 @@ import com.dobmob.dobsliding.events.OnCollapsedListener;
 import com.dobmob.dobsliding.events.OnExpandedListener;
 import com.dobmob.dobsliding.exceptions.NoActionBarException;
 import com.dobmob.dobsliding.models.SlidingItem.SlidingType;
-import com.dobmob.dobslidingdemo.R;
 
 public class MainActivity extends Activity {
 
@@ -28,11 +28,13 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		// We must enable home button
-		getActionBar().setHomeButtonEnabled(true);
-
-		// For ActionBarSherlock and CompactActionBar
-		// getSupportActionBar().setHomeButtonEnabled(true);
+		// For GingerBreed and less, we must enable home button,
+		// else, it is up to you
+		if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.GINGERBREAD_MR1) {
+			
+			// Uncomment
+			//getSupportActionBar().setHomeButtonEnabled(true);
+		}
 
 		// Initialization
 		try {
