@@ -31,9 +31,9 @@ public class MainActivity extends Activity {
 		// For GingerBreed and less, we must enable home button,
 		// else, it is up to you
 		if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.GINGERBREAD_MR1) {
-			
+
 			// Uncomment
-			//getSupportActionBar().setHomeButtonEnabled(true);
+			// getSupportActionBar().setHomeButtonEnabled(true);
 		}
 
 		// Initialization
