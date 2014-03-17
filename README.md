@@ -5,27 +5,25 @@ DobSliding
 DobSliding [(Google Play Demo)](https://play.google.com/store/apps/details?id=com.dobmob.dobslidingdemo)
 --------------------------------------------------
 
-There are more than horizontal sliding menu library for Android, but what about vertical sliding?
+There are more than one horizontal sliding menu library for Android, but what about a vertical sliding?
 
-DobSliding is an Open Source Android library that allows developers to develop applications with vertical sliding menus like Android notifications menu.
+DobSliding is an Open Source Android library that allows developers to develop applications with vertical sliding menus just like the Android notifications menu.
 
 ![alt tag](https://raw.github.com/bilalsammour/DobSliding/master/screenshot1.png)
 
-Here is an  video of the example application in this repository : [http://youtu.be/_zOkV6nxu98](http://youtu.be/_zOkV6nxu98)
+Here is a short video for the example application in this repository : [http://youtu.be/_zOkV6nxu98](http://youtu.be/_zOkV6nxu98)
 
 
 Setup
 -----
 
-In Eclipse, just import the library as an Android library project. Project > Clean to generate the binaries you need, like R.java, etc.
-Then, just add DobSliding as a dependency to your existing project.
+In Eclipse, just import the library as an Android library project. Project > Clean to generate the binaries you need, like R.java, etc. Then, just add DobSliding as a dependency to your existing project.
 
 
 How?
 ----
 
-In order to integrate DobSliding into your projects, take a look to the sample project, also, this is an example:
-dob_sliding_menu.xml
+In order to integrate DobSliding into your projects, take a look to the sample project, also, this is an example: dob_sliding_menu.xml
 
 ```xml
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -136,7 +134,7 @@ MainActivity.java
 For ActionBarSherlock and CompactActionBar
 ------------------------------------------
 
-DobSliding works perfectly in both ActionBarSherlock and CompactActionBar, for Android GingerBreed and less, don't forget to write
+DobSliding works perfectly in both ActionBarSherlock and CompactActionBar. For Android GingerBread and less, don't forget to write
 
 ```java
 getSupportActionBar().setHomeButtonEnabled(true);
