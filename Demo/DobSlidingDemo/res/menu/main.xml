@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_size"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_size"/>
+    <item
+        android:id="@+id/action_move"
+        android:orderInCategory="200"
+        android:showAsAction="never"
+        android:title="@string/action_move"/>
+
+</menu>
