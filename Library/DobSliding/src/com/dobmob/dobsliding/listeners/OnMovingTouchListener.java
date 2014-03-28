@@ -29,34 +29,37 @@ public class OnMovingTouchListener implements OnTouchListener {
 
 	@Override
 	public boolean onTouch(View v, MotionEvent event) {
-		float y = event.getY();
+		if (vSlidingMenuController.getSlidingItem().isEnabled()) {
+			float y = event.getY();
 
-		switch (event.getAction()) {
-		case MotionEvent.ACTION_DOWN:
-			vSlidingMenuController.focusOnSliding();
+			switch (event.getAction()) {
+			case MotionEvent.ACTION_DOWN:
+				vSlidingMenuController.focusOnSliding();
 
-			if (slidingLayoutParams.bottomMargin > 0) {
-				return false;
+				if (slidingLayoutParams.bottomMargin > 0) {
+					return false;
+				}
+
+				break;
+
+			case MotionEvent.ACTION_MOVE:
+				slidingLayoutParams.topMargin = (int) y - slidingParent.getHeight();
+				slidingParent.setLayoutParams(slidingLayoutParams);
+				break;
+
+			case MotionEvent.ACTION_UP:
+				if (y > vSlidingMenuController.getJumpLine()) {
+					vSlidingMenuController.animateSliding((int) y,
+							(int) slidingParent.getHeight());
+
+				} else {
+					vSlidingMenuController.animateSliding((int) y, 0);
+				}
+
+				break;
+
 			}
-
-			break;
-
-		case MotionEvent.ACTION_MOVE:
-			slidingLayoutParams.topMargin = (int) y - slidingParent.getHeight();
-			slidingParent.setLayoutParams(slidingLayoutParams);
-			break;
-
-		case MotionEvent.ACTION_UP:
-			if (y > vSlidingMenuController.getJumpLine()) {
-				vSlidingMenuController.animateSliding((int) y,
-						(int) slidingParent.getHeight());
-
-			} else {
-				vSlidingMenuController.animateSliding((int) y, 0);
-			}
-
-			break;
-
+			
 		}
 
 		return true;

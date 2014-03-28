@@ -146,6 +146,7 @@ Properties
 
 * slidingType - Sliding type can be SIZE, MOVE
 * slidingStatus - COLLAPSED, EXPANDED, ANIMATING
+* enabled - To enable / disable sliding menu
 * maxDuration - The maximum duration for sliding, default value is millisecond for each pixel, e.g. sliding view height is 1020 PX, the duration will be 1020 MS
 * jumpLinePercentage - The percentage of screen height in which the sliding menu will be expanded on scrolling, e.g. if jumpLinePercentage is 0.6, user will scroll to 0.6 of screen to expand
 * useHandle - This sentence is for handle that will be shown in the middle of ActionBar, default value is true
@@ -173,12 +174,20 @@ Developed By
 ------------
 
 Bilal Sammour - bilalsammour@gmail.com
+<<<<<<< HEAD
+=======
+In Startappz
+>>>>>>> origin/dev
 
 
 License
 -------
 
+<<<<<<< HEAD
     Copyright 2014 Bilal Sammour
+=======
+    Copyright 2014 Bilal Sammour @ Startappz
+>>>>>>> origin/dev
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -190,6 +199,7 @@ License
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
+<<<<<<< HEAD
     limitations under the License.
 
 
@@ -198,3 +208,6 @@ Note
 
 I developed DobSliding while I am working in Startappz company, so you can find the library in
 [https://github.com/Startappz/DobSliding](https://github.com/Startappz/DobSliding)
+=======
+    limitations under the License.
+>>>>>>> origin/dev

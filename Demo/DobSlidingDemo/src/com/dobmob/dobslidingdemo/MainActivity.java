@@ -1,13 +1,16 @@
 package com.dobmob.dobslidingdemo;
 
-import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 
 import com.dobmob.dobsliding.DobSlidingMenu;
 import com.dobmob.dobsliding.events.OnCollapsedListener;
@@ -15,7 +18,7 @@ import com.dobmob.dobsliding.events.OnExpandedListener;
 import com.dobmob.dobsliding.exceptions.NoActionBarException;
 import com.dobmob.dobsliding.models.SlidingItem.SlidingType;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
 	// Just a tag for Log
 	private String TAG = getClass().getSimpleName();
@@ -31,9 +34,7 @@ public class MainActivity extends Activity {
 		// For GingerBreed and less, we must enable home button,
 		// else, it is up to you
 		if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.GINGERBREAD_MR1) {
-
-			// Uncomment
-			// getSupportActionBar().setHomeButtonEnabled(true);
+			getSupportActionBar().setHomeButtonEnabled(true);
 		}
 
 		// Initialization
@@ -112,11 +113,24 @@ public class MainActivity extends Activity {
 				// We can use collapse() also
 			}
 		});
+
+		CheckBox enabledCheckBox = (CheckBox) findViewById(R.id.enabledCheckBox);
+		enabledCheckBox.setChecked(vSlidingMenu.isEnabled());
+		enabledCheckBox
+				.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+
+					@Override
+					public void onCheckedChanged(CompoundButton buttonView,
+							boolean isChecked) {
+
+						// To enable / disable sliding menu
+						vSlidingMenu.setEnabled(isChecked);
+					}
+				});
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
