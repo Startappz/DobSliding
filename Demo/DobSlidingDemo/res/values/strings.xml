@@ -2,10 +2,10 @@
 <resources>
 
     <string name="app_name">DobSlidingDemo</string>
+    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="action_size">Size</string>
     <string name="action_move">Move</string>
-    <string name="hello_world">Hello world!</string>
     <string name="dob_sliding_menu">Dob Sliding Menu</string>
     <string name="click_me">Click Me</string>
     <string name="toggle_me">Toggle Me</string>
