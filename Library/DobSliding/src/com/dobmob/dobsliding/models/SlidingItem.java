@@ -13,6 +13,7 @@ public class SlidingItem {
 		SIZE, MOVE
 	}
 
+	private boolean enabled = true;
 	private View slidingView;
 	private SlidingType slidingType = SlidingType.SIZE;
 	private int maxDuration = VSlidingMenuController.DEFAULT_INT;
@@ -23,6 +24,14 @@ public class SlidingItem {
 
 	private OnCollapsedListener onCollapsedListener;
 	private OnExpandedListener onExpandedListener;
+
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
+	}
 
 	public View getSlidingView() {
 		return slidingView;

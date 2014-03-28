@@ -21,15 +21,16 @@ public class DobSlidingMenu {
 	public DobSlidingMenu(Activity activity) throws NoActionBarException {
 		super();
 		this.activity = activity;
-		
+
 		init();
 	}
 
 	private void init() throws NoActionBarException {
 		slidingItem = new SlidingItem();
-		vSlidingMenuController = new VSlidingMenuController(activity, slidingItem);
+		vSlidingMenuController = new VSlidingMenuController(activity,
+				slidingItem);
 	}
-	
+
 	public void expand() {
 		vSlidingMenuController.expand();
 	}
@@ -41,7 +42,16 @@ public class DobSlidingMenu {
 	public void finish() {
 		vSlidingMenuController.finish();
 	}
-	
+
+	public boolean isEnabled() {
+		return slidingItem.isEnabled();
+	}
+
+	public void setEnabled(boolean enabled) {
+		slidingItem.setEnabled(enabled);
+		vSlidingMenuController.setEnabled(enabled);
+	}
+
 	public SlidingStatus getSlidingStatus() {
 		return vSlidingMenuController.getSlidingStatus();
 	}
@@ -54,10 +64,10 @@ public class DobSlidingMenu {
 		slidingItem.setSlidingView(slidingView);
 		vSlidingMenuController.setSlidingView(slidingView);
 	}
-	
+
 	public void setSlidingView(int slidingResId) {
-		View slidingView = LayoutInflater.from(activity)
-				.inflate(slidingResId, null, false);
+		View slidingView = LayoutInflater.from(activity).inflate(slidingResId,
+				null, false);
 
 		setSlidingView(slidingView);
 	}
@@ -99,7 +109,7 @@ public class DobSlidingMenu {
 	public void setHandleImages(int handleCollapsedIcon, int handleExpandedIcon) {
 		slidingItem.setHandleCollapsedIcon(handleCollapsedIcon);
 		slidingItem.setHandleExpandedIcon(handleExpandedIcon);
-		
+
 		vSlidingMenuController.changeHandle(getSlidingStatus());
 	}
 
