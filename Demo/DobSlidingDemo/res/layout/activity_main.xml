@@ -6,11 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-<<<<<<< HEAD
     tools:context="com.dobmob.dobslidingdemo.MainActivity" >
-=======
-    tools:context=".MainActivity" >
->>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 
     <Button
         android:id="@+id/expand"
@@ -20,7 +16,6 @@
         android:layout_centerVertical="true"
         android:text="@string/expand" />
 
-<<<<<<< HEAD
     <CheckBox
         android:id="@+id/enabledCheckBox"
         android:layout_width="wrap_content"
@@ -29,6 +24,4 @@
         android:layout_centerVertical="true"
         android:text="@string/enabled" />
 
-=======
->>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 </RelativeLayout>

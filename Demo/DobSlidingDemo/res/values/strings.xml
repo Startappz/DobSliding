@@ -2,24 +2,14 @@
 <resources>
 
     <string name="app_name">DobSlidingDemo</string>
-<<<<<<< HEAD
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="action_size">Size</string>
     <string name="action_move">Move</string>
-=======
-    <string name="action_settings">Settings</string>
-    <string name="action_size">Size</string>
-    <string name="action_move">Move</string>
-    <string name="hello_world">Hello world!</string>
->>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
     <string name="dob_sliding_menu">Dob Sliding Menu</string>
     <string name="click_me">Click Me</string>
     <string name="toggle_me">Toggle Me</string>
     <string name="expand">Expand</string>
-<<<<<<< HEAD
     <string name="enabled">Enabled</string>
-=======
->>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 
 </resources>

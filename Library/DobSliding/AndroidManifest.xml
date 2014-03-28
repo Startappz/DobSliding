@@ -1,11 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dobmob.dobsliding"
     android:versionCode="1"
-<<<<<<< HEAD
     android:versionName="1.0.2" >
-=======
-    android:versionName="1.0" >
->>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 
     <uses-sdk
         android:minSdkVersion="8"

@@ -29,7 +29,6 @@ public class OnSizingTouchListener implements OnTouchListener {
 
 	@Override
 	public boolean onTouch(View v, MotionEvent event) {
-<<<<<<< HEAD
 		if (vSlidingMenuController.getSlidingItem().isEnabled()) {
 			float y = event.getY();
 
@@ -61,36 +60,6 @@ public class OnSizingTouchListener implements OnTouchListener {
 
 			}
 
-=======
-		float y = event.getY();
-
-		switch (event.getAction()) {
-		case MotionEvent.ACTION_DOWN:
-			vSlidingMenuController.focusOnSliding();
-
-			if (slidingParent.getHeight() > 0) {
-				return false;
-			}
-
-			break;
-
-		case MotionEvent.ACTION_MOVE:
-			slidingLayoutParams.height = (int) y;
-			slidingParent.setLayoutParams(slidingLayoutParams);
-			break;
-
-		case MotionEvent.ACTION_UP:
-			if (y > vSlidingMenuController.getJumpLine()) {
-				vSlidingMenuController.animateSliding((int) y,
-						vSlidingMenuController.getSlidingHeight());
-
-			} else {
-				vSlidingMenuController.animateSliding((int) y, 0);
-			}
-
-			break;
-
->>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 		}
 
 		return true;

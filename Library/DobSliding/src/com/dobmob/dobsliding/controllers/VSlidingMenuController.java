@@ -167,13 +167,9 @@ public class VSlidingMenuController {
 	}
 
 	public void animateSliding(int fromY, int toY) {
-<<<<<<< HEAD
 		if (slidingItem.isEnabled()) {
 			animationExecutor.animateView(fromY, toY);
 		}
-=======
-		animationExecutor.animateView(fromY, toY);
->>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 	}
 
 	public SlidingItem getSlidingItem() {
@@ -184,7 +180,6 @@ public class VSlidingMenuController {
 		this.slidingItem = slidingItem;
 	}
 
-<<<<<<< HEAD
 	public void setEnabled(boolean enabled) {
 		hideSlidingLayout();
 
@@ -196,8 +191,6 @@ public class VSlidingMenuController {
 		}
 	}
 
-=======
->>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 	public SlidingStatus getSlidingStatus() {
 		return Computer.getSlidingStatus(this);
 	}
