@@ -174,12 +174,13 @@ Developed By
 ------------
 
 Bilal Sammour - bilalsammour@gmail.com
+In Startappz
 
 
 License
 -------
 
-    Copyright 2014 Bilal Sammour
+    Copyright 2014 Bilal Sammour @ Startappz
     
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -192,10 +193,3 @@ License
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
-
-
-Note
-----
-
-I developed DobSliding while I am working in Startappz company, so you can find the library in
-[https://github.com/Startappz/DobSliding](https://github.com/Startappz/DobSliding)
