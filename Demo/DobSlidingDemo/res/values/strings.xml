@@ -10,5 +10,6 @@
     <string name="click_me">Click Me</string>
     <string name="toggle_me">Toggle Me</string>
     <string name="expand">Expand</string>
+    <string name="enabled">Enabled</string>
 
 </resources>

@@ -8,6 +8,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.Switch;
 
 import com.dobmob.dobsliding.DobSlidingMenu;
 import com.dobmob.dobsliding.events.OnCollapsedListener;
@@ -110,6 +113,19 @@ public class MainActivity extends Activity {
 				vSlidingMenu.expand();
 
 				// We can use collapse() also
+			}
+		});
+
+		Switch enabledSwitch = (Switch) findViewById(R.id.enabledSwitch);
+		enabledSwitch.setChecked(vSlidingMenu.isEnabled());
+		enabledSwitch.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView,
+					boolean isChecked) {
+
+				// To enable / disable sliding menu
+				vSlidingMenu.setEnabled(isChecked);
 			}
 		});
 	}

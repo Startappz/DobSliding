@@ -16,4 +16,12 @@
         android:layout_centerVertical="true"
         android:text="@string/expand" />
 
+    <Switch
+        android:id="@+id/enabledSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/enabled" />
+
 </RelativeLayout>
