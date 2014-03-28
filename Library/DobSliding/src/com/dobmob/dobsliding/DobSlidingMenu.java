@@ -21,16 +21,26 @@ public class DobSlidingMenu {
 	public DobSlidingMenu(Activity activity) throws NoActionBarException {
 		super();
 		this.activity = activity;
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 		init();
 	}
 
 	private void init() throws NoActionBarException {
 		slidingItem = new SlidingItem();
+<<<<<<< HEAD
 		vSlidingMenuController = new VSlidingMenuController(activity,
 				slidingItem);
 	}
 
+=======
+		vSlidingMenuController = new VSlidingMenuController(activity, slidingItem);
+	}
+	
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 	public void expand() {
 		vSlidingMenuController.expand();
 	}
@@ -42,6 +52,7 @@ public class DobSlidingMenu {
 	public void finish() {
 		vSlidingMenuController.finish();
 	}
+<<<<<<< HEAD
 
 	public boolean isEnabled() {
 		return slidingItem.isEnabled();
@@ -52,6 +63,9 @@ public class DobSlidingMenu {
 		vSlidingMenuController.setEnabled(enabled);
 	}
 
+=======
+	
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 	public SlidingStatus getSlidingStatus() {
 		return vSlidingMenuController.getSlidingStatus();
 	}
@@ -64,10 +78,17 @@ public class DobSlidingMenu {
 		slidingItem.setSlidingView(slidingView);
 		vSlidingMenuController.setSlidingView(slidingView);
 	}
+<<<<<<< HEAD
 
 	public void setSlidingView(int slidingResId) {
 		View slidingView = LayoutInflater.from(activity).inflate(slidingResId,
 				null, false);
+=======
+	
+	public void setSlidingView(int slidingResId) {
+		View slidingView = LayoutInflater.from(activity)
+				.inflate(slidingResId, null, false);
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 
 		setSlidingView(slidingView);
 	}
@@ -109,7 +130,11 @@ public class DobSlidingMenu {
 	public void setHandleImages(int handleCollapsedIcon, int handleExpandedIcon) {
 		slidingItem.setHandleCollapsedIcon(handleCollapsedIcon);
 		slidingItem.setHandleExpandedIcon(handleExpandedIcon);
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 		vSlidingMenuController.changeHandle(getSlidingStatus());
 	}
 

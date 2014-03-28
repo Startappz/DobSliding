@@ -4,7 +4,11 @@
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
+<<<<<<< HEAD
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+=======
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to

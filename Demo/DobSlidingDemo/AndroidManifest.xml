@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dobmob.dobslidingdemo"
+<<<<<<< HEAD
     android:versionCode="3"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="10"
+=======
+    android:versionCode="2"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
         android:targetSdkVersion="19" />
 
     <application
@@ -24,4 +32,8 @@
         </activity>
     </application>
 
+<<<<<<< HEAD
 </manifest>
+=======
+</manifest>
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa

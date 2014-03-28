@@ -1,16 +1,25 @@
 package com.dobmob.dobslidingdemo;
 
+<<<<<<< HEAD
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+=======
+import android.app.Activity;
+import android.os.Build;
+import android.os.Bundle;
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+<<<<<<< HEAD
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+=======
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 
 import com.dobmob.dobsliding.DobSlidingMenu;
 import com.dobmob.dobsliding.events.OnCollapsedListener;
@@ -18,7 +27,11 @@ import com.dobmob.dobsliding.events.OnExpandedListener;
 import com.dobmob.dobsliding.exceptions.NoActionBarException;
 import com.dobmob.dobsliding.models.SlidingItem.SlidingType;
 
+<<<<<<< HEAD
 public class MainActivity extends ActionBarActivity {
+=======
+public class MainActivity extends Activity {
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 
 	// Just a tag for Log
 	private String TAG = getClass().getSimpleName();
@@ -34,7 +47,13 @@ public class MainActivity extends ActionBarActivity {
 		// For GingerBreed and less, we must enable home button,
 		// else, it is up to you
 		if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.GINGERBREAD_MR1) {
+<<<<<<< HEAD
 			getSupportActionBar().setHomeButtonEnabled(true);
+=======
+
+			// Uncomment
+			// getSupportActionBar().setHomeButtonEnabled(true);
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 		}
 
 		// Initialization
@@ -113,6 +132,7 @@ public class MainActivity extends ActionBarActivity {
 				// We can use collapse() also
 			}
 		});
+<<<<<<< HEAD
 
 		CheckBox enabledCheckBox = (CheckBox) findViewById(R.id.enabledCheckBox);
 		enabledCheckBox.setChecked(vSlidingMenu.isEnabled());
@@ -127,10 +147,16 @@ public class MainActivity extends ActionBarActivity {
 						vSlidingMenu.setEnabled(isChecked);
 					}
 				});
+=======
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
+<<<<<<< HEAD
+=======
+		// Inflate the menu; this adds items to the action bar if it is present.
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}

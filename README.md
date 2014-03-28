@@ -146,7 +146,10 @@ Properties
 
 * slidingType - Sliding type can be SIZE, MOVE
 * slidingStatus - COLLAPSED, EXPANDED, ANIMATING
+<<<<<<< HEAD
 * enabled - To enable / disable sliding menu
+=======
+>>>>>>> 691d27f144cc9a44260457b32d4daab6a7264faa
 * maxDuration - The maximum duration for sliding, default value is millisecond for each pixel, e.g. sliding view height is 1020 PX, the duration will be 1020 MS
 * jumpLinePercentage - The percentage of screen height in which the sliding menu will be expanded on scrolling, e.g. if jumpLinePercentage is 0.6, user will scroll to 0.6 of screen to expand
 * useHandle - This sentence is for handle that will be shown in the middle of ActionBar, default value is true
