@@ -18,18 +18,12 @@ public class SlidingParentKeyListener implements OnKeyListener {
 
 	@Override
 	public boolean onKey(View v, int keyCode, KeyEvent event) {
-		if (keyCode == KeyEvent.KEYCODE_BACK) {
-			if (vSlidingMenuController.getSlidingStatus() == VSlidingMenuController.SlidingStatus.EXPANDED) {
-				vSlidingMenuController.collapse();
-				return true;
-
-			} else {
-				return false;
-			}
-
-		} else {
-			return onKey(v, keyCode, event);
-		}
+		if (keyCode == KeyEvent.KEYCODE_BACK && vSlidingMenuController.getSlidingStatus() == VSlidingMenuController.SlidingStatus.EXPANDED) {
+        		vSlidingMenuController.collapse();
+	            	return true;
+	        } else {
+	            	return false;
+	        }
 	}
 
 }
